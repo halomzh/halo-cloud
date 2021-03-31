@@ -12,6 +12,8 @@
         <module>halo-sentinel</module>
         <module>halo-sentinel/sentinel-starter-web</module>
         <module>halo-gateway</module>
+        <module>halo-config</module>
+        <module>halo-config/config-starter-nacos</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +26,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <guava.version>30.1-jre</guava.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
         <servlet.api.version>2.5</servlet.api.version>
         <guava.version>28.2-jre</guava.version>
         <gson.version>2.8.6</gson.version>

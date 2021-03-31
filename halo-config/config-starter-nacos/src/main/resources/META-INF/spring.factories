@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.halo.config.nacos.configuration.ConfigNacosConfiguration
