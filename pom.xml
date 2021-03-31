@@ -11,6 +11,7 @@
         <module>halo-auth</module>
         <module>halo-sentinel</module>
         <module>halo-sentinel/sentinel-starter-web</module>
+        <module>halo-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
