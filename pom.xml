@@ -14,13 +14,15 @@
         <module>halo-gateway</module>
         <module>halo-config</module>
         <module>halo-config/config-starter-nacos</module>
+        <module>halo-example</module>
+        <module>halo-example/halo-example-config</module>
     </modules>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.3</version>
+        <version>2.3.9.RELEASE</version>
         <relativePath/>
     </parent>
 

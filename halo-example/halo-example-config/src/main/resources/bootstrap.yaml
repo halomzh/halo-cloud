@@ -1,0 +1,25 @@
+# Tomcat
+server:
+  port: 8899
+
+spring:
+  application:
+    name: example-config-app
+
+  cloud:
+    nacos:
+      # Nacos Config 配置项，对应 NacosConfigProperties 配置属性类
+      config:
+        server-addr: 10.12.107.60:8848 # Nacos 服务器地址
+        namespace: # 使用的 Nacos 的命名空间，默认为 null
+        group: example # 使用的 Nacos 配置分组，默认为 DEFAULT_GROUP
+        name: app-test-a.yaml  # 使用的 Nacos 配置集的 dataId，默认为 spring.application.name
+        file-extension: yaml # 使用的 Nacos 配置集的 dataId 的文件拓展名，同时也是 Nacos 配置集的配置格式，默认为 properties
+        shared-configs:
+
+halo:
+  config:
+    nacos:
+      enable: false
+      config-file-name-list:
+        - app-test-a.yaml

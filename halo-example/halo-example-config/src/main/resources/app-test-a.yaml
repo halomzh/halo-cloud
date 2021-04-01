@@ -1,0 +1,4 @@
+example:
+  name: zhangsan
+  age: 11
+  type: user
