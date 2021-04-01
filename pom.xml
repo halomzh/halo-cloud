@@ -16,6 +16,7 @@
         <module>halo-config/config-starter-nacos</module>
         <module>halo-example</module>
         <module>halo-example/halo-example-config</module>
+        <module>halo-discovery</module>
     </modules>
     <packaging>pom</packaging>
 
