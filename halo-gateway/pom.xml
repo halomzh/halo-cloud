@@ -12,6 +12,9 @@
     <artifactId>halo-gateway</artifactId>
 
     <packaging>pom</packaging>
+    <modules>
+        <module>gateway-app</module>
+    </modules>
 
 
 </project>

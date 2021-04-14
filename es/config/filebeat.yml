@@ -1,0 +1,63 @@
+# 日志输入配置
+#=========================== Filebeat inputs =============================
+
+filebeat.inputs:
+
+- type: log
+  # Change to true to enable this input configuration.
+  enabled: true
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    #- /var/log/*.log
+    - /logs/log_all.log
+  fields:
+    log_topic: app_log
+    #- c:\programdata\elasticsearch\logs\*
+
+# - type: log
+#   enabled: true
+#   paths:
+#     - /opt/elk/logs/*.log
+#   fields:
+#     log_topic: traefik_log
+
+# - type: log
+#   enabled: true
+#   paths:
+#     - /opt/elk/securityLogs/*.log
+#   fields:
+#     log_topic: security_log
+
+# json.keys_under_root: true
+# json.add_error_key: true
+# json.overwrite_keys: true
+
+#==================== Elasticsearch template setting ==========================
+# setup.template.name: "applog"
+# setup.template.pattern: "applog_*"
+# setup.template.overwrite: false
+# setup.template.enabled: true
+# setup.template.settings:
+# index.number_of_shards: 1
+
+#-------------------------- Elasticsearch output ------------------------------
+# output.elasticsearch:
+#   hosts: ["127.0.0.1:9200"]
+#   # 按月建索引
+#   index: "applog_%{+YYYY.MM}"
+
+  # Protocol - either `http` (default) or `https`.
+  # protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  # api_key: "id:api_key"
+  # username: "elastic"
+  # password: "changeme"
+
+
+#日志输出配置(采用kafka缓冲日志数据)
+output.kafka:
+  enabled: true
+  hosts: ["192.168.0.105:9092"]
+  topic: 'applog'
+
