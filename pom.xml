@@ -18,7 +18,6 @@
         <module>halo-example/halo-example-config</module>
         <module>halo-discovery</module>
         <module>halo-log</module>
-        <module>halo-log/log-zipkin-server</module>
     </modules>
     <packaging>pom</packaging>
 
