@@ -15,7 +15,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @NoArgsConstructor
 public class AuthClientProperties {
 
-    public static final String PREFIX = "micro.fast.auth.client";
+    public static final String PREFIX = "auth.client";
 
     private TokenInfo tokenInfo;
 

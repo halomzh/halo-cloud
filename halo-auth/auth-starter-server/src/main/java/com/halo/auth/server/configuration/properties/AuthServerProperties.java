@@ -15,7 +15,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = AuthServerProperties.PREFIX)
 public class AuthServerProperties {
 
-    public static final String PREFIX = "micro.fast.auth.server";
+    public static final String PREFIX = "auth.server";
 
     private TokenInfo tokenInfo;
 
