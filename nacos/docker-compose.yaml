@@ -1,0 +1,30 @@
+# 启动命令
+# docker-compose --compatibility up -d
+version: '3'
+
+services:
+  nacos:
+    image: nacos/nacos-server:latest
+    container_name: nacos
+    restart: always
+    env_file:
+      - ./env/nacos-standlone-mysql.env
+#    environment:
+#      PREFER_HOST_MODE: 192.168.0.105 #如果支持主机名可以使用hostname,否则使用ip，默认也是ip
+#      SPRING_DATASOURCE_PLATFORM: mysql #数据源平台 仅支持mysql或不保存empty
+#      MODE: standalone
+#      MYSQL_SERVICE_HOST: 192.168.0.105
+#      MYSQL_SERVICE_DB_NAME: nacos
+#      MYSQL_SERVICE_PORT: 3306
+#      MYSQL_SERVICE_USER: root
+#      MYSQL_SERVICE_PASSWORD: root
+#      NACOS_APPLICATION_PORT: 8848
+#      JVM_XMS: 512m
+#      JVM_MMS: 320m
+    volumes:
+      - ./logs/:/home/nacos/logs
+      - ./plugins/:/home/nacos/plugins
+#      - ./application.properties:/home/nacos/conf/application.properties
+    ports:
+      - "8848:8848"
+      - "9555:9555"
