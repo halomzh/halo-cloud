@@ -15,12 +15,12 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties(value = {
 		ConfigNacosProperties.class
 })
-@ConditionalOnProperty(prefix = ConfigNacosProperties.PREFIX, value = "enable")
+@ConditionalOnProperty(prefix = ConfigNacosProperties.PREFIX, name = "enable", havingValue = "true")
 public class ConfigNacosConfiguration {
 
 	@Bean
 	public ConfigNacosRunner configNacosRunner() {
 		return new ConfigNacosRunner();
 	}
-	
+
 }
