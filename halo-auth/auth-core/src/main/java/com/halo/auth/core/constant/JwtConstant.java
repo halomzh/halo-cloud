@@ -7,40 +7,45 @@ package com.halo.auth.core.constant;
  */
 public class JwtConstant {
 
-    /**
-     * token
-     */
-    public static final String TOKEN_NAME = "token";
+	/**
+	 * token
+	 */
+	public static final String TOKEN_HEADER_NAME = "access-token";
 
-    /**
-     * 过期时间
-     */
-    public static final String JWT_EXPIRE_DATE = "expireDate";
+	/**
+	 * 过期时间
+	 */
+	public static final String JWT_EXPIRE_DATE = "expireDate";
 
-    /**
-     * 用户id
-     */
-    public static final String JWT_KEY_USER_ID = "userId";
+	/**
+	 * 用户id
+	 */
+	public static final String JWT_KEY_USER_ID = "userId";
 
-    /**
-     * 用户账号
-     */
-    public static final String JWT_KEY_ACCOUNT = "account";
+	/**
+	 * 用户id
+	 */
+	public static final String USER_ID_HEADER_NAME = "user-id";
 
-    /**
-     * 用户名称
-     */
-    public static final String JWT_KEY_USER_NAME = "userName";
+	/**
+	 * 用户账号
+	 */
+	public static final String JWT_KEY_ACCOUNT = "account";
 
-    /**
-     * 用户信息
-     */
-    public static final String JWT_KEY_USER_INFO = "userInfo";
+	/**
+	 * 用户名称
+	 */
+	public static final String JWT_KEY_USER_NAME = "userName";
+
+	/**
+	 * 用户信息
+	 */
+	public static final String JWT_KEY_USER_INFO = "userInfo";
 
 
-    /**
-     * 其他信息
-     */
-    public static final String JWT_KEY_ANOTHER_INFO = "otherInfo";
+	/**
+	 * 其他信息
+	 */
+	public static final String JWT_KEY_ANOTHER_INFO = "otherInfo";
 
 }
