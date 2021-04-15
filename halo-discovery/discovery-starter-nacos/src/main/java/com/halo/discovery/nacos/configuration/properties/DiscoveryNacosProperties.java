@@ -25,5 +25,5 @@ public class DiscoveryNacosProperties {
 	/**
 	 * token
 	 */
-	private String tokenHeaderName = "accessToken";
+	private String tokenHeaderName = "access-token";
 }
