@@ -5,6 +5,7 @@ import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.halo.sentinel.pojo.Result;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,6 +19,7 @@ import java.io.PrintWriter;
 
 @Slf4j
 @Configuration
+@ConditionalOnWebApplication
 public class SentinelAutoConfiguration {
 
 	@Bean
